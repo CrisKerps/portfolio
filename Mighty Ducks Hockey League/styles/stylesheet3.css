@@ -1,0 +1,314 @@
+body {
+    background-color: lightpink;
+    margin-right    : 120rem;
+}
+
+body>header>img.Banner {
+    width   : 120rem;
+    height  : 37.5rem;
+    position: absolute;
+    z-index : -1;
+}
+
+body>header>img.Logo {
+    width           : 12.5rem;
+    height          : 12.5rem;
+    background-color: linen;
+    position        : absolute;
+    border          : .1875rem solid black;
+    top             : 28.125rem;
+    left            : 101.25rem;
+    z-index         : 2;
+}
+
+header>h1 {
+    font-size  : 6.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position   : absolute;
+    top        : 0rem;
+    color      : #FFFFFF;
+    text-shadow: .25rem .1875rem 0 #7A7A7A;
+    color      : #FFFFFF;
+
+}
+
+nav.flex-container {
+    display        : flex;
+    justify-content: space-around;
+    width          : 60rem;
+    position       : absolute;
+    top            : 36rem;
+    left           : 1rem;
+    z-index        : 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav>a[href="index.html"],
+[href="about.html"],
+[href="contact.html"],
+[href="rules.html"],
+[href="gameinfo.html"],
+[href="register.html"] {
+    font-family  : 'comic sans ms';
+    font-weight  : bold;
+    color        : #FFFFFF !important;
+    font-size    : 2rem;
+    text-shadow  : .125rem .0625rem 0rem #7CACDE;
+    box-shadow   : .3125rem .25rem 0rem #BEE2F9;
+    padding      : .6875rem 1.125rem;
+    border-radius: .625rem;
+    border       : .1875rem solid #3866A3;
+    background   : #9170EE;
+    background   : linear-gradient(to top, #9170EE, #95CFCF);
+}
+
+main>section>h2 {
+    font-size: 4.6875rem;
+    position : absolute;
+    top      : 29.375rem;
+    left     : 62.5rem;
+}
+
+.box {
+    position             : absolute;
+    border               : 3rem solid violet;
+    -webkit-border-radius: 2.5rem 0rem 2.5rem 0rem;
+    -moz-border-radius   : 2.5rem 0rem 2.5rem 0rem;
+    border-radius        : 2.5rem 0rem 2.5rem 0rem;
+    background-color     : violet;
+    border-right-width   : 116.875rem;
+    top                  : 32.1875rem;
+    z-index              : -1;
+}
+
+.art {
+    display       : flex;
+    flex-direction: column;
+    text-align    : center;
+    position      : absolute;
+    top           : 40rem;
+    width         : 120rem;
+    font-size     : 3rem;
+    z-index       : 0;
+}
+
+h2,
+[class="august4"],
+[class="august16"],
+[class="september1"] {
+    display: flex;
+}
+
+p,
+[class="a"],
+[class="b"],
+[class="c"] {
+    display: flex;
+    ;
+}
+
+footer {
+    font-size: 1.875rem;
+    position : absolute;
+    top      : 112.5rem;
+    left     : 53.125rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-about {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    text-align     : center;
+    position       : absolute;
+    top            : 38rem;
+    width          : 120rem;
+    font-size      : 3rem;
+    z-index        : 0;
+}
+
+footer>p.aboutfooter {
+    font-size: 1.875rem;
+    position : absolute;
+    top      : 121.875rem;
+    left     : 53.125rem;
+    z-index  : 1;
+}
+
+
+
+
+
+
+
+
+
+
+main>section>h2.contact {
+    color      : black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 6.25rem;
+    top        : 43.75rem;
+    left       : 43.75rem;
+}
+
+main>section>p.aaa {
+    font-size: 4.0625rem;
+    position : absolute;
+    color    : black;
+    top      : 56.25rem;
+    left     : 28.125rem;
+}
+
+main>section>p.bbb {
+    font-size: 4.0625rem;
+    position : absolute;
+    color    : black;
+    top      : 61.875rem;
+    left     : 22.5rem;
+}
+
+footer>p.contactfooter {
+    font-size: 1.875rem;
+    position : absolute;
+    top      : 114.375rem;
+    left     : 53.125rem;
+    z-index  : 5;
+}
+
+.imagen4 {
+    width: 120rem;
+}
+
+.Banner4 {
+    width   : 120rem;
+    height  : 37.5rem;
+    position: absolute;
+    z-index : -1;
+}
+
+.flex-list {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-self     : center;
+    font-size      : 2.8125rem;
+    position       : absolute;
+    width          : 95.875rem;
+    top            : 50rem;
+    left           : 15.625rem;
+}
+
+.flex-sublist {
+    margin-top: 2.5rem;
+}
+
+.flex-play {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    font-size      : 2.8125rem;
+    position       : absolute;
+    left           : 15.625rem;
+    width          : 96.875rem;
+    top            : 130.375rem;
+}
+
+.rulesb {
+    left     : 12.5rem;
+    color    : black;
+    font-size: 4.5rem;
+    top      : 40.625rem;
+}
+
+.play {
+    left     : 5.5rem;
+    color    : black;
+    font-size: 4.5rem;
+}
+
+.rulesfooter {
+    top     : 67.5rem;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+.table {
+    position : absolute;
+    top      : 43.75rem;
+    font-size: 3.75rem;
+    width    : 120rem;
+}
+
+td {
+    background-color: lightcoral;
+}
+
+.th2 {
+    background-color: lightblue;
+}
+
+.td2 {
+    background-color: lightblue;
+}
+
+.table-2 {
+    position : absolute;
+    top      : 100.75rem;
+    font-size: 3.75rem;
+    width    : 120rem;
+}
+
+
+
+
+
+
+
+
+
+
+.form {
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+    position      : relative;
+    top           : 43.75rem;
+    width         : 120rem;
+    font-size     : 1.875rem;
+}
+
+main>section>form>div>p {
+    width: 50rem;
+}
+
+.fr {
+    position: relative;
+}
+
+.maps {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    width          : 120rem;
+    position       : relative;
+    top            : 130rem;
+}

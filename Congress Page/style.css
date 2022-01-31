@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+tbody thead td  {
+    text-align: center;  
+    width: 60%; 
+}
+
+
+body{  
+    
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5rem; 
+    border: 1px solid black;   
+    width: 55%;
+}
+
+#logo{
+    height: 12rem;
+    width: 12rem;
+}
+#houseText{
+    width: 50%;
+}
+.d-flex{
+justify-content: center;
+}

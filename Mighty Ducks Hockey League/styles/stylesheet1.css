@@ -1,0 +1,306 @@
+body {
+    background-color: silver;
+}
+
+header>img.Logo {
+    width             : 200px;
+    height            : 200px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow        : 5px 5px 15px 5px #000000;
+    position          : absolute;
+    top               : 400px;
+    left              : 1500px;
+    border            : 2px outset #1C6EA4;
+    background        : white;
+    z-index           : 1;
+}
+
+header>img.Banner {
+    width : 1900px;
+    height: 550px;
+}
+
+h1 {
+    font-size  : 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position   : absolute;
+    top        : 0px;
+    color      : #FFFFFF;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    color      : #FFFFFF;
+}
+
+
+
+nav>a[href="index.html"] {
+    position        : absolute;
+    top             : 550px;
+    left            : 50px;
+    font-size       : 35px;
+    font-family     : Verdana, Geneva, Tahoma, sans-serif;
+    color           : black;
+    z-index         : 1;
+    color           : rgb(0, 0, 0);
+    font-size       : 40px;
+    line-height     : 40px;
+    padding         : 4px;
+    border-radius   : 9px;
+    font-family     : Georgia, serif;
+    font-weight     : normal;
+    text-decoration : none;
+    font-style      : normal;
+    font-variant    : normal;
+    text-transform  : none;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(193, 203, 202) 50%, rgb(247, 247, 247) 100%);
+    box-shadow      : rgba(110, 239, 255, 0) 0px 7px 15px 5px;
+    border          : 4px outset rgb(28, 110, 164);
+    display         : inline-block;
+}
+
+nav>a[href="contact.html"] {
+    position        : absolute;
+    top             : 950px;
+    left            : 50px;
+    font-size       : 35px;
+    font-family     : Verdana, Geneva, Tahoma, sans-serif;
+    color           : black;
+    z-index         : 1;
+    color           : rgb(0, 0, 0);
+    font-size       : 40px;
+    line-height     : 40px;
+    padding         : 4px;
+    border-radius   : 9px;
+    font-family     : Georgia, serif;
+    font-weight     : normal;
+    text-decoration : none;
+    font-style      : normal;
+    font-variant    : normal;
+    text-transform  : none;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(193, 203, 202) 50%, rgb(247, 247, 247) 100%);
+    box-shadow      : rgba(110, 239, 255, 0) 0px 7px 15px 5px;
+    border          : 4px outset rgb(28, 110, 164);
+    display         : inline-block;
+}
+
+nav>a[href="about.html"] {
+    position        : absolute;
+    top             : 750px;
+    left            : 50px;
+    font-size       : 35px;
+    font-family     : Verdana, Geneva, Tahoma, sans-serif;
+    color           : black;
+    z-index         : 1;
+    color           : rgb(0, 0, 0);
+    font-size       : 40px;
+    line-height     : 40px;
+    padding         : 4px;
+    border-radius   : 9px;
+    font-family     : Georgia, serif;
+    font-weight     : normal;
+    text-decoration : none;
+    font-style      : normal;
+    font-variant    : normal;
+    text-transform  : none;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(193, 203, 202) 50%, rgb(247, 247, 247) 100%);
+    box-shadow      : rgba(110, 239, 255, 0) 0px 7px 15px 5px;
+    border          : 4px outset rgb(28, 110, 164);
+    display         : inline-block;
+}
+
+
+
+
+
+main>section>h2 {
+    color      : whitesmoke;
+    top        : 470px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size  : 50px;
+    position   : absolute;
+    left       : 700px;
+    z-index    : 1;
+}
+
+main>section>p.box {
+    box-sizing: content-box;
+    width     : 1900px;
+    height    : 100px;
+    background: black;
+    position  : absolute;
+    top       : 480px;
+}
+
+main>section>article>h3.august4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 50px;
+    position   : absolute;
+    left       : 400px;
+    top        : 700px;
+}
+
+main>section>article>p.a {
+    position : absolute;
+    font-size: 45px;
+    top      : 800px;
+    left     : 600px;
+}
+
+main>section>article>h3.august16 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 50px;
+    position   : absolute;
+    left       : 400px;
+    top        : 900px;
+}
+
+main>section>article>p.b {
+    position : absolute;
+    font-size: 45px;
+    top      : 1000px;
+    left     : 600px;
+}
+
+main>section>article>h3.september1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 50px;
+    position   : absolute;
+    left       : 400px;
+    top        : 1100px;
+}
+
+main>section>article>p.c {
+    position : absolute;
+    font-size: 45px;
+    top      : 1200px;
+    left     : 600px;
+}
+
+main>section>img {
+    width   : 1900px;
+    height  : auto;
+    position: static;
+    top     : 0px;
+    left    : 0px;
+    opacity : 60%;
+}
+
+
+
+footer>p {
+    font-size: 30px;
+    position : absolute;
+    top      : 1750px;
+    left     : 850px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main>section>h3.mission {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 70px;
+    position   : absolute;
+    left       : 800px;
+    top        : 700px;
+}
+
+main>section>p.a {
+    width     : 1500px;
+    position  : absolute;
+    top       : 850px;
+    left      : 200px;
+    text-align: center;
+    font-size : 40px;
+}
+
+main>section>h3.vision {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 70px;
+    position   : absolute;
+    left       : 830px;
+    top        : 1010px;
+}
+
+main>section>p.b {
+    width     : 1500px;
+    position  : absolute;
+    top       : 1150px;
+    left      : 200px;
+    text-align: center;
+    font-size : 40px;
+}
+
+main>section>h3.general {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 70px;
+    position   : absolute;
+    left       : 630px;
+    top        : 1260px;
+}
+
+main>section>p.c {
+    width     : 1500px;
+    position  : absolute;
+    top       : 1400px;
+    left      : 200px;
+    text-align: center;
+    font-size : 40px;
+}
+
+footer>p.aboutfooter {
+    font-size: 30px;
+    position : absolute;
+    top      : 1900px;
+    left     : 850px;
+}
+
+
+
+
+
+
+
+
+
+
+main>section>h2.contact {
+    color      : black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 100px;
+    top        : 700px;
+    left       : 700px;
+}
+
+main>section>p.aaa {
+    font-size: 65px;
+    position : absolute;
+    color    : black;
+    top      : 900px;
+    left     : 450px;
+}
+
+main>section>p.bbb {
+    font-size: 65px;
+    position : absolute;
+    color    : black;
+    top      : 990px;
+    left     : 360px;
+}
+
+footer>p.contactfooter {
+    font-size: 30px;
+    position : absolute;
+    top      : 1830px;
+    left     : 850px;
+}

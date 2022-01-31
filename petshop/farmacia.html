@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="oie_transparent.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Farmacia</title>
+</head>
+
+<body class="body">
+    <header class="container-fluid">
+        <div class="logo-div">
+            <img src="oie_transparent.png" alt="Logo" class="logo">
+            <h1>Franco Petshop</h1>
+        </div>
+        <i class="fas fa-shopping-cart cart-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <span v-if="count >= 1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart">
+                {{count}}
+            </span>
+        </i>
+        <nav class="navbar navbar-expand{-sm|-md|-lg|-xl|-xxl} col-lg-12">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contáctenos</a>
+                </li>
+                <li>
+                    <a href="farmacia.html">Farmacia</a>
+                </li>
+                <li>
+                    <a href="juguetes.html">Juguetes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app">
+        <!-- Cart Modal-->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h3 v-if="total == 0" id="if" class="cart-total card-text">¡Aún no agregaste productos al carrito!</h3>
+                        </div>
+                        <div class="modal-item" v-for="(producto, index) in carrito" v-bind:id="index + 1">                            
+                            <div class="item-info">
+                                <h3 class="card-title">{{producto.nombre}}</h3>
+                                <i class="fas fa-times delete-item" onclick="deleteItem(this)"></i>
+                            </div>                            
+                            <h4 class="card-text price">${{producto.precio - 1}},99</h4>
+                        </div>
+                        <div>
+                            <h3 v-if="total > 0" id="if" class="cart-total card-text">Total: ${{total}}</h3>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button v-if="total > 0" type="button" class="btn btn-success" id="btn-buy" v-on:click="comprar()">Comprar ahora</button>
+                        <button v-if="total > 0" type="button" class="btn btn-danger" v-on:click="borrarTodos()">Quitar todos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="./oie_transparent.png" class="toast-img rounded me-2" width="30px" alt="...">
+                <strong class="me-auto">Franco Petshop</strong>
+                <small>Hace un instante</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Agregaste un producto al carrito.
+              </div>
+            </div>
+        </div>
+
+        <section class="filter container-fluid">
+            <h2>Filtrar por precio:</h2>
+            <select v-model="valor" name="price" id="price" v-on:change="cambiarSelector()">
+                <option value="">Por defecto</option>
+                <option value="+">De mayor $ a menor $</option>
+                <option value="-">De menor $ a mayor $</option>
+            </select>
+        </section>
+
+        <div class="container-fluid">
+            <div class="main-container">
+                <div v-for="medicamento in productos" class="card">
+                    <img v-bind:href="medicamento.imagen" target="_blank">
+                    <div class="card-body">
+                        <img v-bind:src="medicamento.imagen" alt="">
+                        <h3 class="card-title">{{medicamento.nombre}}</h3>
+                        <p class="card-text">{{medicamento.descripcion}}</p>
+                        <p v-if="medicamento.stock < 5" id="if" class="card-text alert-danger">¡Últimas unidades disponibles!</p>
+                        <p v-if="medicamento.stock > 1" class="card-text">Stock: {{medicamento.stock}} unidades</p>
+                        <p v-if="medicamento.stock == 1" class="card-text">Stock: {{medicamento.stock}} unidad</p>
+                        <h4 class="card-text price">${{medicamento.precio - 1}},99</h4>
+                        <div>
+                            <a href="#" class="btn btn-cart" data-bs-target="#cartModal" v-on:click="alertaProducto()">Agregar al carrito</a>
+                            <a href="#" class="btn btn-primary btn-warning">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="about-website"> © 2021 Franco Pet Shop - All Rights Reserved</p>
+        <div class="footer-div">
+            <p>Seguinos en: <a href="facebook.com" target="_blank"><i class="social-icon fab fa-facebook"></i></a>
+                <a href="instagram.com" target="_blank">
+                    <i class="social-icon fab fa-instagram"></i>
+                </a>
+                <a href="youtube.com" target="_blank">
+                    <i class="social-icon fab fa-youtube"></i>
+                </a>
+                <a href="twitter.com" target="_blank">
+                    <i class="social-icon fab fa-twitter"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/d92a2a2802.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

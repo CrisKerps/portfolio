@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@300;400;700&family=Reenie+Beanie&family=Roboto:wght@100&display=swap');
+:root {
+    --title-font: 'Reenie Beanie', cursive;
+    --nav-font: 'Roboto', sans-serif;
+    --text-font: 'Pridi', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+svg {
+    position: sticky;
+    left: 95%;
+}
+
+img {
+    width: 100%
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: none;
+}
+
+.carousel-inner {
+    display: flex;
+    height: 40rem;
+}
+
+.item-1 {
+    background: URL("../../cat-1-4K.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-2 {
+    background: URL('../../Golden-Retriever-cute-puppy-grass_3840x2160.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.item-3 {
+    background: URL('../../carousel-img-3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-caption {
+    width: 100%;
+    background: rgba(8, 8, 8, 0.5);
+    position: absolute;
+    left: 0;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--text-font);
+}
+
+.body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background: #483434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.about-div article {
+    padding: 0;
+}
+
+main {
+    background: #6B4F4F;
+    flex-grow: 1;
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.logo {
+    width: 75px;
+    list-style-type: none;
+}
+
+h1 {
+    font-family: var(--title-font);
+    color: #D4AC2B;
+    color: #FFF3E4;
+    font-size: 5rem;
+    margin: 0 0 0 2rem;
+    text-shadow: 0 0 10px #0a0a0a;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.nav-list li {
+    transition: 0.3s;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #D4AC2B;
+    color: #FFF3E4;
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.nav-list li:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+h2 {
+    color: #FFF3E4;
+    font-family: var(--text-font);
+    font-weight: 700;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.filter select {
+    margin-left: 1rem;
+}
+
+section p {
+    color: #FFF3E4;
+    font-family: var(--text-font);
+    font-weight: 300;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.location p {
+    font-style: italic;
+}
+
+.card {
+    font-family: var(--text-font);
+}
+
+@media screen and (min-width: 992px) {
+    .nav-list li {
+        margin: 0 1rem;
+    }
+    .location p {
+        margin-left: 0.5rem;
+    }
+    .filter {
+        justify-content: left;
+        padding-left: 3rem;
+    }
+    .card {
+        width: 20rem;
+    }
+    .cart-icon {
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+
+/* Contacto */
+
+html,
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+#main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FFCE45;
+    background: #6B4F4F;
+}
+
+form {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    box-shadow: 0 2px 5px #f5f5f5;
+    background: #f5f5f5;
+}
+
+.input-title {
+    font-weight: bold;
+}
+
+.fas {
+    margin: 25px 10px 0;
+    font-size: 72px;
+    color: #fff;
+}
+
+.fa-envelope {
+    transform: rotate(-20deg);
+}
+
+.fa-at,
+.fa-mail-bulk {
+    transform: rotate(10deg);
+}
+
+input,
+textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background: #2371a0;
+}
+
+@media (min-width: 568px) {
+    .main-block {
+        flex-direction: row;
+    }
+    .left-part,
+    form {
+        width: 50%;
+    }
+    .fa-envelope {
+        margin-top: 0;
+        margin-left: 20%;
+    }
+    .fa-at {
+        margin-top: -10%;
+        margin-left: 65%;
+    }
+    .fa-mail-bulk {
+        margin-top: 2%;
+        margin-left: 28%;
+    }
+}
+
+.pet-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pet-options input {
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+#contacto {
+    color: rgba(8, 8, 8, 0.6);
+    font-size: 3rem;
+}
+
+
+/* Farmacia */
+
+.main-container {
+    display: flex;
+    /*padding: 3rem;*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-body {
+    padding: 2rem;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: space-between;
+}
+
+.card {
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(8, 8, 8, 0.8);
+}
+
+.price {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    color: white;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.btn-cart {
+    background: linear-gradient(-180deg, #00D775, #00BD68);
+    margin-bottom: 1rem;
+}
+
+.btn-cart:hover {
+    background: #00bd68;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+#button-body {
+    background-image: linear-gradient(135deg, rgb(218, 96, 39), rgb(180, 204, 255))
+}
+
+.toast-img {
+    width: 1.2rem;
+}
+
+
+/* Carrito */
+
+.cart-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0;
+    color: #FFF3E4;
+}
+
+.modal-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.cart-total {
+    font-size: 1.8rem;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+}
+
+.item-info h3 {
+    margin: 0;
+}
+
+.delete-item {
+    font-size: 1.5rem;
+    color: red;
+    margin: 0 0 0 1rem;
+    cursor: pointer;
+}
+
+.badge {
+    top: inherit!important;
+    left: inherit!important;
+    font-size: 0.8rem;
+}
+
+.social-icon {
+    color: white;
+    padding-left: 0.8rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+
+/*  Whatsapp  */
+
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    bottom: 120px;
+    right: 25px;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp:hover {
+    background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background: #483434;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-div {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.about-website {
+    font-size: 1rem;
+    color: white;
+}

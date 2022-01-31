@@ -1,0 +1,262 @@
+body {
+    width           : 120rem;
+    background-color: lightgray;
+    height          : 120rem;
+}
+
+header>img.Banner {
+    width   : 120rem;
+    height  : 37.5rem;
+    position: absolute;
+    top     : 10rem;
+    border  : .1875rem solid black;
+    z-index: -1;
+}
+
+header>img.Logo {
+    width           : 12.5rem;
+    height          : 12.5rem;
+    background-color: lightsteelblue;
+    border          : .3125rem solid darkgrey;
+    position        : absolute;
+    top             : 50rem;
+    left            : 3.125rem;
+    z-index         : 1;
+}
+
+header>h1 {
+    font-size: 4.6875rem;
+    position : absolute;
+    left     : 10rem;
+}
+
+
+a:hover {
+    background-color: green;
+}
+
+.flex-container {
+    display        : flex;
+    justify-content: space-evenly;
+    position       : absolute;
+    width          : 37.5rem;
+    top            : 8.75rem;
+    left           : 81.25rem;
+    z-index        : 2;
+}
+
+nav.a,
+[href="index.html"],
+[href="about.html"],
+[href="contact.html"],
+[href="rules.html"],
+[href="gameinfo.html"] {
+    color     : white;
+    font-size : 1.875rem;
+    border    : .3125rem solid black;
+    background: darkblue;
+}
+
+main>section>img {
+    position: absolute;
+    top     : 48.125rem;
+    opacity : 65%;
+    width   : 120rem;
+    border  : .3125rem solid black;
+}
+
+main>section>h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size  : 4.0625rem;
+    position   : absolute;
+    top        : 39.375rem;
+    left       : 43.75rem;
+    z-index    : 1;
+    color      : whitesmoke;
+}
+
+main>section>p.box {
+    box-sizing: content-box;
+    width     : 120rem;
+    height    : 6.25rem;
+    background: black;
+    position  : absolute;
+    top       : 40.625rem;
+}
+
+main>section>article>h3.august4 {
+    font-size  : 3.125rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position   : absolute;
+    top        : 48.75rem;
+    left       : 25rem;
+}
+
+main>section>article>p.a {
+    font-size  : 2.1875rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position   : absolute;
+    top        : 53.125rem;
+    left       : 40.625rem;
+}
+
+main>section>article>h3.august16 {
+    font-size  : 3.125rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position   : absolute;
+    top        : 61.25rem;
+    left       : 25rem;
+}
+
+main>section>article>p.b {
+    font-size  : 2.1875rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position   : absolute;
+    top        : 66.25rem;
+    left       : 40.625rem;
+}
+
+main>section>article>h3.september1 {
+    font-size  : 3.125rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position   : absolute;
+    top        : 73.75rem;
+    left       : 25rem;
+}
+
+main>section>article>p.c {
+    font-size  : 2.1875rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position   : absolute;
+    top        : 78.75rem;
+    left       : 40.625rem;
+}
+
+footer>p {
+    font-size: 1.875rem;
+    position : absolute;
+    top      : 121.875rem;
+    left     : 53.125rem;
+}
+
+
+
+
+
+
+
+
+
+main>section>h3.mission {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 4.375rem;
+    position   : absolute;
+    left       : 50rem;
+    top        : 50rem;
+}
+
+main>section>p.a {
+    width     : 81.25rem;
+    position  : absolute;
+    top       : 58.125rem;
+    left      : 21.875rem;
+    text-align: center;
+    font-size : 2.5rem;
+}
+
+main>section>h3.vision {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 4.375rem;
+    position   : absolute;
+    left       : 51.875rem;
+    top        : 75.625rem;
+}
+
+main>section>p.b {
+    width     : 93.75rem;
+    position  : absolute;
+    top       : 83.125rem;
+    left      : 12.5rem;
+    text-align: center;
+    font-size : 2.5rem;
+}
+
+main>section>h3.general {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 4.375rem;
+    position   : absolute;
+    left       : 39.375rem;
+    top        : 95.625rem;
+}
+
+main>section>p.c {
+    width     : 93.75rem;
+    position  : absolute;
+    top       : 103.125rem;
+    left      : 12.5rem;
+    text-align: center;
+    font-size : 2.5rem;
+}
+
+
+footer>p.aboutfooter {
+    font-size: 1.875rem;
+    position : absolute;
+    top      : 131.25rem;
+    left     : 53.125rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main>section>h2.contact {
+    color      : black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size  : 6.25rem;
+    top        : 50rem;
+    left       : 43.75rem;
+}
+
+main>section>p.aaa {
+    font-size: 4.0625rem;
+    position : absolute;
+    color    : black;
+    top      : 60rem;
+    left     : 28.125rem;
+}
+
+main>section>p.bbb {
+    font-size: 4.0625rem;
+    position : absolute;
+    color    : black;
+    top      : 65rem;
+    left     : 22.5rem;
+}
+
+footer>p.contactfooter {
+    font-size: 1.875rem;
+    position : absolute;
+    top      : 125rem;
+    left     : 53.125rem;
+}
+
+
+
+
+
+
+
+
+
+
