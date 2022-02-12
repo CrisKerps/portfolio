@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 250 150" style="enable-background:new 0 0 250 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st2{opacity:0.5;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);enable-background:new    ;}
+	.st3{opacity:0.15;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_3_);enable-background:new    ;}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'Rockwell';}
+	.st6{font-size:27.3092px;}
+</style>
+<g>
+	<path class="st0" d="M0,57"/>
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1642.6078" y1="104.9621" x2="-1643.1547" y2="105.9621" gradientTransform="matrix(30.196 0 0 35.4389 49623.2578 -3661.9495)">
+			<stop  offset="0" style="stop-color:#4400FF"/>
+			<stop  offset="1" style="stop-color:#2AB6D9"/>
+		</linearGradient>
+		<path class="st1" d="M19.4,57L0,92.4h10.8L30.2,57H19.4z"/>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-1642.6063" y1="104.9629" x2="-1643.1532" y2="105.9629" gradientTransform="matrix(30.196 0 0 35.4389 49636.5078 -3661.9495)">
+			<stop  offset="0" style="stop-color:#4400FF"/>
+			<stop  offset="1" style="stop-color:#2AB6D9"/>
+		</linearGradient>
+		<path class="st2" d="M32.7,57L13.3,92.4h10.8L43.5,57H32.7z"/>
+		
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-1642.6046" y1="104.9612" x2="-1643.1514" y2="105.9612" gradientTransform="matrix(30.1942 0 0 35.4389 49646.6602 -3661.9495)">
+			<stop  offset="0" style="stop-color:#4400FF"/>
+			<stop  offset="1" style="stop-color:#2AB6D9"/>
+		</linearGradient>
+		<path class="st3" d="M45.9,57L26.4,92.4h10.8L56.7,57H45.9z"/>
+	</g>
+</g>
+<text transform="matrix(1.647 0 0 1 53.626 83.6973)" class="st4 st5 st6">CK BANK</text>
+</svg>

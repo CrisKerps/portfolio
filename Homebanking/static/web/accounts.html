@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style2.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="icon" href="assets/img/bank.svg">
+
+    <title>Accounts</title>
+</head>
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="d-flex" id="content-wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-container" class="bg-primary">
+
+                <div class="logo">
+                    <h4 class="text-light font-weight-bold mb-0"><img src="images/logo-white.svg" alt="" /></h4>
+                </div>
+    
+                <div class="menu">
+                    <a href="accounts.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-apps lead mr-2"></i>
+                        Home</a>
+    
+                    <a href="transfer.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-people lead mr-2"></i>
+                        Transfers</a>
+    
+                    <a href="card.html" class="d-block text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i>
+                        Cards</a>
+                    <a href="crypto.html" class="d-block text-light p-3 border-0"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
+                            <path
+                                d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z" />
+                        </svg>
+                        Cryptocurrency</a>
+                    <a href="#" class="d-block text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                        Configuration
+                    </a>
+                </div>
+            </div>
+            <!-- Fin sidebar -->
+
+            <div class="w-100">
+
+                <!-- Navbar -->
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="form-inline position-relative d-inline-block my-2">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Buscar">
+                                <button class="btn position-absolute btn-search" type="submit"><i
+                                        class="icon ion-md-search"></i></button>
+                            </form>
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                        </svg>{{clients.firstName}} {{clients.lastName}}</a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="accounts.html">Home</a>
+                                        <a class="dropdown-item" href="card.html">Cards</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="index.html">Log out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Fin Navbar -->
+
+                <!-- Page Content -->
+                <div id="content" class="bg-grey w-100">
+                    <section class="bg-light py-3">
+                        <div class="container" id="us">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-8">
+                                    <h1 class="font-weight-bold mb-0">Hi {{clients.firstName}}!</h1>
+                                    <p class="lead text-muted">Look the lastest information</p>
+                                </div>
+                                <div class="col-lg-3 col-md-4 d-flex">
+                                    <button class="btn btn-primary w-100 align-self-center">Download resume</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- CARD ACCOUNTS -->
+
+
+                    <div class="container">
+                        <div class="row justify-content-between">
+
+                            <div class="col-12 col-md-6">
+                                <div class="container p-3 m-0">
+                                    <div class="row">
+                                        <div v-for="account in accounts">
+                                            <div class="card col-12 p-0 mb-3">
+                                                <div class="card-header">
+                                                    {{account.type}} $ {{account.number}}
+                                                </div>
+                                                <div class="card-body row justify-content-between">
+                                                    <div class="col-7 col-md-9 col-lg-10">
+                                                        <h5 class="card-title">Saldo</h5>
+                                                    </div>
+                                                    <div class="col-5 col-md-3 col-lg-2">
+                                                        <p class="card-text">${{account.balance}}</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <a href="transfer.html"
+                                                            class="btn btn-primary">Transferir</a>
+
+                                                        <a v-bind:href="cambiarPag(account.id)"
+                                                            class="btn btn-primary">Movimientos</a>
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                                            @click="selecAcc(account.number)">
+                                                            Eliminar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticBackdropLabel">¿Quieres
+                                                            eliminar cuenta?</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Cuenta N°: {{deleteAccNumber}}
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop1"
+                                                            @click="deleteAccount">Eliminar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticBackdropLabel">La Cuenta N°:
+                                                            {{deleteAccNumber}}</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        {{mensaje}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal fade" id="staticBackdrop123" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticBackdropLabel">Elegir un tipo
+                                                            de Cuenta a crear</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <label for="accType" class="pe-3">Cuenta: </label>
+                                                        <select name="accType" id="accType" v-model="accType">
+                                                            <option value="" selected disabled>Select</option>
+                                                            <option value="AHORRO">Caja de Ahorro</option>
+                                                            <option value="CTACTE">CTA CTE</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-bs-dismiss="modal" @click="createAccount"
+                                                            :disabled="confirmar()">Crear</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <ul class="list-group" id="lista-menu">
+                                    <li class="list-group-item"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop123">Abrir cuenta</a></li>
+                                    <li class="list-group-item"><a href="./pagos.html">Pagos</a></li>
+                                    <li class="list-group-item"><a href="./account.html">Resumenes</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="tarjetaNoCuenta col-12 col-md-6 col-lg-5 animate__animated animate__backInDown"
+                                v-if="mensaje == true">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-end">
+                                        <a href="#" @click="cerrarModal"><i class="bi bi-x-circle-fill"></i></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mt-2 text-center text-danger">No puedes abrir mas cuentas
+                                        </h5>
+                                        <p class="card-text mb-2 text-center">Tienes la máxima cantidad de cuentas
+                                            posibles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section>
+                        <div class="container">
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-8 my-3">
+                                        <div class="card rounded-0">
+                                            <div class="card-header bg-light">
+                                                <h6 class="font-weight-bold mb-0">Movements in the last Months</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="myChart" width="300" height="150"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 my-3">
+                                        <div v-if="loans.length == 0">
+                                            <div class="card col-12 p-0 mb-3">
+                                                <div class="card-header">
+                                                    Tipo de prestamo - No posee
+                                                </div>
+                                                <div class="card-body row justify-content-between">
+                                                    <div class="col-7 col-md-9 col-lg-9">
+                                                        <p class="card-text">$ </p>
+                                                    </div>
+                                                    <div class="col-5 col-md-3 col-lg-3">
+                                                        <p class="card-text">Cuotas - </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div v-else>
+                                            <div v-for="loan in loans">
+                                                <div class="card col-12 p-0 mb-3">
+                                                    <div class="card-header">
+                                                        Tipo de prestamo - {{loan.name}}
+                                                    </div>
+                                                    <div class="card-body row justify-content-between">
+                                                        <div class="col-7 col-md-9 col-lg-9">
+                                                            <p class="card-text">${{loan.amount}}</p>
+                                                        </div>
+                                                        <div class="col-5 col-md-3 col-lg-3">
+                                                            <p class="card-text">Cuotas - {{loan.payments}}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58d99c8dac.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+        integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Oct 2021', 'Nov 2021', 'Dec 2021', 'Jan 2022'],
+                datasets: [{
+                    label: 'Outlay',
+                    data: [50, 100, 150, 200],
+                    backgroundColor: [
+                        '#12C9E5',
+                        '#12C9E5',
+                        '#12C9E5',
+                        '#111B54'
+                    ],
+                    maxBarThickness: 30,
+                    maxBarLength: 2
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script src="script/main.js"></script>
+
+
+</body>
+
+</html>
