@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style2.css">
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="icon" href="assets/bank.svg">
+
+    <title>Transfers</title>
+</head>
+
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
+<body v-cloak>
+    <div class="d-flex" id="content-wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="bg-primary">
+
+            <div class="logo">
+                <h4 class="text-light font-weight-bold mb-0"><img src="images/logo-white.svg" alt="" /></h4>
+            </div>
+
+            <div class="menu">
+                <a href="accounts.html" class="d-block text-light p-3 border-0"><i
+                        class="icon ion-md-apps lead mr-2"></i>
+                    Home</a>
+
+                <a href="transfer.html" class="d-block text-light p-3 border-0"><i
+                        class="icon ion-md-people lead mr-2"></i>
+                    Transfers</a>
+
+                <a href="card.html" class="d-block text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i>
+                    Cards</a>
+                <a href="crypto.html" class="d-block text-light p-3 border-0"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
+                        <path
+                            d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z" />
+                    </svg>
+                    Cryptocurrency</a>
+                <a href="#" class="d-block text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                    Configuration
+                </a>
+            </div>
+        </div>
+        <!-- Fin sidebar -->
+
+        <div id="app" class="w-100">
+
+            <!-- Navbar -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-inline position-relative d-inline-block my-2">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Buscar">
+                            <button class="btn position-absolute btn-search" type="submit"><i
+                                    class="icon ion-md-search"></i></button>
+                        </form>
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    {{client.firstName}} {{client.lastName}}
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="accounts.html">Home</a>
+                                    <a class="dropdown-item" href="card.html">Cards</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index.html">Log out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fin Navbar -->
+
+            <!--Transfer Form Start-->
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="card animate__animated animate__zoomIn">
+                                    <h5 class="pt-3">Nueva Transferencia:</h5>
+                                    <form class="pt-0">
+                                        <div class="">
+                                            <div>
+                                                <label for="fromAccount" class="pe-2">Cuenta de Origen: </label>
+                                                <select name="fromAccount" id="fromAccount" v-model="fromAccount">
+                                                    <option v-for="acc in client.accounts" :value="acc.number">
+                                                        {{acc.number}} ${{acc.balance}}</option>
+                                                </select>
+                                            </div>
+                                            <div class="pt-2">
+                                                <label for="reciever" class="pe-2">Tipo de cuenta: </label>
+                                                <select name="reciever" id="reciever" v-model="owner"
+                                                    @change="resetToAccount">
+                                                    <option value="" disabled>- Select -</option>
+                                                    <option value="own">Propia</option>
+                                                    <option value="third">Terceros</option>
+                                                </select>
+                                            </div>
+                                            <div class="pt-2">
+                                                <label for="toAccount" class="pe-2">Cuenta destino: </label>
+                                                <select v-if="owner == 'own'" name="toAccount" v-model="toAccount">
+                                                    <option v-for="acc in cuentaDisponible()" :value="acc.number">
+                                                        {{acc.number}}</option>
+                                                </select>
+                                                <div v-if="owner == 'third'">
+                                                    <input type="text" name="toAccount" maxlength="11" size="11"
+                                                        v-model="toAccount" placeholder="Ej.: VIN123">
+                                                </div>
+                                                <div v-if="owner == ''">
+                                                    <input type="number" name="toAccount" maxlength="11" size="11"
+                                                        v-model="toAccount" placeholder="Seleccione un destinatario"
+                                                        disabled>
+                                                </div>
+                                            </div>
+                                            <div class="pt-2">
+                                                <label for="transferAmount">Suma a Transferir: </label>
+                                                <div>
+                                                    <input type="number" name="transferAmount" id="transferAmount"
+                                                        maxlength="4" size="11" v-model="transferAmount">
+                                                </div>
+                                            </div>
+                                            <div class="pt-2">
+                                                <label for="transferDesc">Descripción: </label>
+                                                <div>
+                                                    <input type="text" name="transferDesc" id="transferDesc"
+                                                        maxlength="20" size="20" v-model="transferDesc">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-3 d-flex justify-content-around">
+                                            <button class="btn btn-danger" type="reset" id="reset">Cancelar</button>
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Confirmar</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <h5 class="modal-title" id="exampleModalLabel">Confirmar Transferencia
+                                            </h5>
+                                            <div class="modal-body d-flex flex-direction-column justify-content-evenly">
+                                                <div>
+                                                    <h6>Cuenta de Origen: {{fromAccount}}</h6>
+                                                    <h6>Cuenta destino: {{toAccount}}</h6>
+                                                    <h6>Suma de la Transferencia: {{transferAmount}}</h6>
+                                                    <h6>Descripción: {{transferDesc}}</h6>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                                    @click="resetTransfer">Cancel</button>
+                                                <button type="submit" class="btn btn-primary" @click="transferPost"
+                                                    data-bs-dismiss="modal" :disabled="btnDes" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal1">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel1"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                {{mensaje}}
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Transfer Form End-->
+
+
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script src="script/transfers.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+        integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+
+    <!-- Fundamental Scripts-->
+
+
+</body>
+
+</html>
