@@ -145,11 +145,11 @@
                                                         {{acc.number}}</option>
                                                 </select>
                                                 <div v-if="owner == 'third'">
-                                                    <input type="text" name="toAccount" maxlength="11" size="11"
+                                                    <input type="text" name="toAccount" maxlength="15" size="15"
                                                         v-model="toAccount" placeholder="Ej.: VIN123">
                                                 </div>
                                                 <div v-if="owner == ''">
-                                                    <input type="number" name="toAccount" maxlength="11" size="11"
+                                                    <input type="number" name="toAccount" maxlength="15" size="15"
                                                         v-model="toAccount" placeholder="Seleccione un destinatario"
                                                         disabled>
                                                 </div>
@@ -158,7 +158,7 @@
                                                 <label for="transferAmount">Suma a Transferir: </label>
                                                 <div>
                                                     <input type="number" name="transferAmount" id="transferAmount"
-                                                        maxlength="4" size="11" v-model="transferAmount">
+                                                        maxlength="4" size="15" v-model="transferAmount">
                                                 </div>
                                             </div>
                                             <div class="pt-2">
